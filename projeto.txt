@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Projetos - ONG Transformando Vidas</title>
+<style>
+*{box-sizing:border-box;margin:0}body{font-family:Arial,sans-serif;color:#333;background:#f5f5f5;line-height:1.6}header{background:#2f6f5e;color:#fff;padding:40px 8%;display:flex;justify-content:space-between;align-items:center}header h1{font-size:23px}nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:bold}.banner{text-align:center;background:#fff;padding:40px 8%}.banner h2,.projeto h2,.contato h2{color:#2f6f5e;margin-bottom:12px}.banner h2{font-size:34px}.projetos{padding:40px 8%}.projeto{display:flex;background:#fff;margin-bottom:25px;border-radius:8px;overflow:hidden;box-shadow:0 2px 7px #ccc}.projeto:nth-child(even){flex-direction:row-reverse}.projeto img{width:100%;height:100%;min-height:250px;object-fit:cover}.imagem{width:45%}.texto{width:55%;padding:30px}.btn{display:inline-block;background:#e39b32;color:#fff;padding:10px 18px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:10px}.contato{text-align:center;background:#e8f1ed;padding:40px 8%}footer{background:#2f6f5e;color:#fff;text-align:center;padding:20px}@media(max-width:700px){header,.projeto,.projeto:nth-child(even){flex-direction:column}.imagem,.texto{width:100%}nav a{margin:0 7px}}
+</style>
+</head>
+<body>
+<header>
+<h1>ONG Transformando Vidas</h1>
+<nav><a href="index.html">Início</a><a href="projetos.html">Projetos</a></nav>
+</header>
+<main>
+<section class="banner"><h2>Nossos projetos</h2><p>Conheça algumas das formas de participação e contribuição para as ações desenvolvidas pela ONG.</p></section>
+<section class="projetos">
+<h2 class="titulo">Conheça nossos projetos</h2>
+<article class="projeto"><div class="imagem"><picture><source srcset="assets/imagens/doacoes.webp" type="image/webp"><img src="assets/imagens/doacoes.jpg" alt="Pessoas realizando doações"></picture></div><div class="texto"><h2>Doações</h2><p>As doações são fundamentais para a continuidade dos projetos e ações sociais realizadas pela ONG.</p><p>Você pode contribuir de acordo com as campanhas e necessidades divulgadas.</p><a class="btn" href="#contato">Quero ajudar</a></div></article>
+<article class="projeto"><div class="imagem"><picture><source srcset="assets/imagens/voluntariado.webp" type="image/webp"><img src="assets/imagens/voluntariado.jpg" alt="Voluntários organizando doações"></picture></div><div class="texto"><h2>Voluntariado</h2><p>O trabalho voluntário permite contribuir com tempo, conhecimento e habilidades.</p><p>Faça parte das ações e ajude a fortalecer os projetos desenvolvidos pela ONG.</p><a class="btn" href="#contato">Quero ser voluntário</a></div></article>
+<article class="projeto"><div class="imagem"><picture><source srcset="assets/imagens/impacto.webp" type="image/webp"><img src="assets/imagens/impacto.jpg" alt="Caixas de doações prontas para transporte"></picture></div><div class="texto"><h2>Impacto social</h2><p>Cada contribuição ajuda a manter as ações e ampliar o atendimento realizado pela organização.</p><p>A participação da comunidade fortalece os projetos e permite alcançar mais pessoas.</p><a class="btn" href="#contato">Conheça nosso trabalho</a></div></article>
+</section>
+<section class="contato" id="contato"><h2>Faça parte</h2><p>Entre em contato com a ONG para saber mais sobre doações e oportunidades de voluntariado.</p></section>
+</main>
+<footer><p>&copy; 2026 ONG Transformando Vidas</p></footer>
+</body>
+</html>
