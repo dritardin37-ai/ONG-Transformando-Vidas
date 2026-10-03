@@ -1,0 +1,27 @@
+{
+  "name": "ong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dritardin37-ai/ONG-Transformando-Vidas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dritardin37-ai/ONG-Transformando-Vidas/issues"
+  },
+  "homepage": "https://github.com/dritardin37-ai/ONG-Transformando-Vidas#readme",
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "vite": "^8.3.2"
+  }
+}
