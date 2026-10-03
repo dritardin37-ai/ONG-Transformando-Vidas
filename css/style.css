@@ -203,3 +203,39 @@ button.btn {
 .mensagem-formulario.sucesso {
     color: #2f6f5e;
 }
+/* Modo de alto contraste */
+body.alto-contraste {
+    background: #000;
+    color: #fff;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer {
+    background: #000;
+    color: #fff;
+}
+
+body.alto-contraste nav a {
+    color: #ffff00;
+}
+
+body.alto-contraste main {
+    background: #000;
+}
+
+body.alto-contraste button,
+body.alto-contraste .btn {
+    background: #ffff00;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+body.alto-contraste a {
+    color: #ffff00;
+}
+
+body.alto-contraste section,
+body.alto-contraste article {
+    background: #000;
+    color: #fff;
+}
