@@ -18,19 +18,37 @@ export function mostrarContato() {
 
                 <div class="campo">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    aria-describedby="erroNome"
+                    required
+                    >
                     <small class="mensagem-erro" id="erroNome"></small>
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    aria-describedby="erroEmail"
+                    required
+                    >
                     <small class="mensagem-erro" id="erroEmail"></small>
                 </div>
 
                 <div class="campo">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    aria-describedby="erroMensagem"
+                    required
+                    ></textarea>
                     <small class="mensagem-erro" id="erroMensagem"></small>
                 </div>
 
@@ -52,9 +70,12 @@ function validarCampo(campo) {
 
     campoContainer.classList.remove("erro", "sucesso");
     mensagemErro.textContent = "";
+    
+    campo.setAttribute("aria-invalid", "false");
 
     if (campo.value.trim() === "") {
         campoContainer.classList.add("erro");
+        campo.setAttribute("aria-invalid", "true");
         mensagemErro.textContent = "Este campo é obrigatório.";
         return false;
     }
@@ -64,6 +85,7 @@ function validarCampo(campo) {
 
         if (!emailValido.test(campo.value.trim())) {
             campoContainer.classList.add("erro");
+            campo.setAttribute("aria-invalid", "true");
             mensagemErro.textContent = "Digite um e-mail válido.";
             return false;
         }
